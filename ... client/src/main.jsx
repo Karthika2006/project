@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.jsx'
 import { AppcontextProvider } from './context/Appcontext.jsx'
 import { BrowserRouter } from 'react-router-dom'
-
 import {ClerkProvider} from '@clerk/clerk-react'
 
 //import publisher key
