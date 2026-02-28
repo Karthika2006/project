@@ -77,15 +77,26 @@ export const AppcontextProvider = (props)=>{
         fetchUserEnrolledCourses()
     },[])
 
-    const logToken = async ()=>{
-        console.log(await getToken());
-    }
+//    const logToken = async ()=>{
+  //      console.log(await getToken());
+    //}
+
+useEffect(() => {
+  const printToken = async () => {
+    if (!user) return;
+
+    const token = await getToken();
+    console.log("Clerk Token:", token);
+  };
+
+  printToken();
+}, [user]);
     
-   useEffect(()=>{
+ /*  useEffect(()=>{
         if(user){
             logToken()
         }
-    },[user])  
+    },[user])  */
    
 
     const value={
