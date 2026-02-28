@@ -1,10 +1,12 @@
 
 import express from 'express'
-import { updateRoleToEducator } from '../controllers/educatorController.js'
+//import { requireAuth } from "@clerk/express"
+import { updateRoleToEducator } from '../controllers/educatorController.js';
 
 const educatorRouter = express.Router()
 
 //add educator role
-educatorRouter.get('/update-role', updateRoleToEducator)
+educatorRouter.get('/update-role',updateRoleToEducator)
+//app.post('/update-role', requireAuth(), updateRoleToEducator)
 
 export default educatorRouter;
