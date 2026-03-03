@@ -14,7 +14,6 @@ import Studentenrolled from './pages/educator/Studentenrolled'
 import Navbar from './components/student/Navbar'
 import "quill/dist/quill.snow.css";
 
-
 const App = () => {
  
   const isEducatorRoute = useMatch('/educator/*')

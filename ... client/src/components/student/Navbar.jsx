@@ -52,7 +52,8 @@ const Navbar = () => {
         {
           user ? <UserButton/> :
 
-        <button onClick={()=>openSignIn()}> <img src={assets.userimg} alt="pro" className="h-10 w-auto object-contain cursor-pointer"/> </button>
+        <button onClick={()=>openSignIn()}> <img src={assets.userimg} alt="pro" 
+        className="h-10 w-auto object-contain cursor-pointer"/> </button>
         }
       </div>
     </div>

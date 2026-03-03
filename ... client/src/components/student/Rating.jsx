@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'
 
 const Rating = ({initialRating, onRate}) => {
@@ -27,7 +26,6 @@ const Rating = ({initialRating, onRate}) => {
               &#9733;
             </span>
         )
-
       
       })}
     </div>

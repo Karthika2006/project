@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import humanizeDuration from "humanize-duration";
 import {useAuth,useUser } from "@clerk/clerk-react";
 
+
 export const Appcontext = createContext()
 
 export const AppcontextProvider = (props)=>{
@@ -77,26 +78,17 @@ export const AppcontextProvider = (props)=>{
         fetchUserEnrolledCourses()
     },[])
 
-//    const logToken = async ()=>{
-  //      console.log(await getToken());
-    //}
+    const logToken = async ()=>{
+        console.log(await getToken());
+    }
 
-useEffect(() => {
-  const printToken = async () => {
-    if (!user) return;
 
-    const token = await getToken();
-    console.log("Clerk Token:", token);
-  };
-
-  printToken();
-}, [user]);
     
- /*  useEffect(()=>{
+   useEffect(()=>{
         if(user){
             logToken()
         }
-    },[user])  */
+    },[user])  
    
 
     const value={
