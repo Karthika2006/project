@@ -34,8 +34,8 @@ const Navbar = () => {
             
            </div>
            { user ? <UserButton/> :
-           <button onClick={()=>openSignIn()} className='bg-blue-600 text-white px-5 py-2 rounded-full'>
-            Create Account</button> }
+           <button onClick={() => { if (!user) { openSignIn() }}}
+          className='bg-blue-600 text-white px-5 py-2 rounded-full'>Create Account</button> }
 
       </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
           user ? <UserButton/> :
 
         <button onClick={()=>openSignIn()}> <img src={assets.userimg} alt="pro" 
-        className="h-10 w-auto object-contain cursor-pointer"/> </button>
+        className="h-10 w-auto object-contain cursor-pointer"/> </button> 
         }
       </div>
     </div>

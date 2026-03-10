@@ -29,6 +29,7 @@ import pagess from './pagess.png'
 import earning from './earning.png'
 import learn from './learn.png'
 import fileupload from './fileupload.png'
+import world from './world.png'
 
 
 export const assets={
@@ -61,7 +62,8 @@ export const assets={
     pagess,
     earning,
     learn,
-    fileupload
+    fileupload,
+    world
     
 }
 
