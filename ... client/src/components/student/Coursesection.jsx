@@ -6,6 +6,7 @@ import CourseCard from './CourseCard'
 
 const Coursesection = () => {
   const {allCourses} = useContext(Appcontext)
+  console.log(allCourses)
 
   return (
     <div className='py-16 md:px-40 px-8'>
